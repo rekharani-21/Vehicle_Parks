@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+    
+
+}
+
+nav {
+    height: 15vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20%;
+    background-color: hsl(213, 74%, 9%);
+    justify-content: space-around;
+    gap: 40%;
+}
+
+nav div {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 7%;
+    filter: drop-shadow(0px 0px 5px rgb(203, 203, 220));
+}
+
+nav div img {
+    height: 80px;
+    width: 90px;
+    filter: drop-shadow(0px 0px 5px rgb(209, 209, 216));
+    left: 0;
+}
+nav h3{
+    font-size: 25px;
+}
+
+nav sub {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif
+}
+
+nav span {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav button {
+    background-color: #4372bc;
+    color: white;
+    padding: 8px 20px;
+    font-size: 15px;
+    border-color: white;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px rgb(209, 209, 216));
+    cursor: pointer;
+}
+
+.home {
+    height: 80vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1563551567-c4fe8dbb5e95?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDcxfHx8ZW58MHx8fHx8");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    display: grid;
+    grid-template-columns: 45% 40%;
+    grid-template-rows: 80%;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.home img {
+    display: grid;
+    text-align: justify;
+    filter: drop-shadow(0px 0px 10px white);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.home div {
+    margin: 10px;
+    line-height: 25px;
+    display: grid;
+    text-align: justify;
+}
+
+.home div p {
+    margin: 10px;
+    color: white;
+}
+
+.home div h2 {
+    color: #4372bc;
+    margin: 10px;
+}
+
+footer {
+    height: 5vh;
+    width: 100%;
+    background-color: hsl(213, 74%, 9%);
+}
+
+.login {
+    height: 80vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1704687409560-103eb4bd0592?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-form {
+    height: 60vh;
+    width: 400px;
+    background-color: hsl(213, 74%, 9%);
+    filter: drop-shadow(0px 0px 5px rgb(209, 209, 216));
+    color: white;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 20% 15% 15% 15%;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+/* Heading styled like button bg */
+.login-form h3 {
+    text-align: center;
+    font-size: 28px;
+    background-color: #4372bc;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 15px;
+    border: 2px solid white;
+    align-self: center;
+}
+
+.login-form input {
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.login-form span {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    border-radius: 8px;
+    align-self: center;
+    gap: 10px;
+}
+
+.eye {
+    color: black;
+    align-self: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.login-form button {
+    width: 150px;
+    background-color: #4372bc;
+    color: white;
+    padding: 10px 20px;
+    font-size: 25px;
+    border: 2px solid white;
+    /* added */
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px rgb(209, 209, 216));
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: center;
+    justify-self: center;
+    /* centers button in grid */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button:hover {
+    background-color: #365f99;
+    /* darker blue on hover */
+    transform: scale(1.05);
+}
+
+.remove-login {
+    color: white;
+    position: absolute;
+    font-size: 160%;
+    font-weight: bold;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.dashbord {
+    height: 80vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1704687409560-103eb4bd0592?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 200px;
+    place-content: center;
+    gap: 5%;
+}
+
+.dashbord div {
+    filter: drop-shadow(0px 0px 5px rgb(209, 209, 216));
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #365f99;
+}
+
+.vehicle_entry_form {
+    height: 80vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1704687409560-103eb4bd0592?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 300px;
+    place-content: center;
+
+}
+
+.vehicle_entry_form form {
+    height: 40vh;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 20% 20% 20% 20%;
+    justify-content: center;
+    align-content: space-around;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px rgb(209, 209, 216));
+    color: white;
+    background-color: hsl(213, 74%, 9%);
+    padding: 10px;
+
+
+
+}
+
+.vehicle_entry_form h3 {
+    text-align: center;
+    font-size: 28px;
+    background-color: #4372bc;
+    padding: 6px 8px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 15px;
+    border: 2px solid white;
+    align-self: center;
+
+}
+
+.vehicle_entry_form button {
+    width: 150px;
+    background-color: #4372bc;
+    color: white;
+    padding: 8px 20px;
+    font-size: 25px;
+    border: 2px solid white;
+    /* added */
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px rgb(209, 209, 216));
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: center;
+    justify-self: center;
+    /* centers button in grid */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.vehicle_entry_form input {
+    outline: none;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+
+}
+
+.vehicle_entry_form select {
+    outline: none;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+
+}
+
+.billing {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1704687409560-103eb4bd0592?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+.billing_section {
+    height: 60vh;
+    width: 400px;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4372bc;
+    gap: 15px;
+    border: 2px solid white;
+    /* added */
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px rgb(209, 209, 216));
+}
+
+.buttons {
+    display: flex;
+    flex-direction: rows;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.qr {
+
+    margin-left: 60px;
+}
+
+.button {
+    border: none;
+    filter: drop-shadow(0px 0px 5px rgb(209, 209, 216));
+    padding: 8px 10px;
+    border-radius: 10px;
+    width: 120px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.button:active {
+    transform: scale(0.9);
+    color: white;
+
+}
+
+.exit_vehicle {
+    width: 100%;
+    height: 80vh;
+    background-image: url("https://images.unsplash.com/photo-1704687409560-103eb4bd0592?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #c0392b;
+}
+
+.exit_vehicle h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background: #3498db;
+    border: 2px solid white;
+    width: max-content;
+    justify-self: center;
+    padding: 8px 10px;
+    border-radius: 10px;
+
+
+}
+
+.exit_vehicle button {
+    width: 100px;
+    background: white;
+    border: none;
+    color: black;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin-bottom: 15px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+.exit_vehicle .back{
+    font-size: 20px;
+    place-items: center;
+    margin-left: 900px;
+}
+
+
+.exit_vehicle button:hover {
+    background-color: black;
+    color: white;
+}
+.exit_vehicle .p{
+    color: white;
+    place-self: center;
+    font-size: 35px;
+    margin-top: 150px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    filter: drop-shadow(0px 0px 5px white);
+
+}
+
+.vehicle-list {
+     flex: 1;   
+     width: 95%;               /* bacha hua space le */
+  overflow-y: auto;         /* 👈 yeh scroll karega */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding-right: 8px;   
+}
+
+.vehicle-row {
+    display: grid;
+    
+    grid-template-columns: 40px 150px 150px 250px 200px 100px;
+    grid-template-rows: auto;
+    overflow: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #4372bc;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    min-height: 55px;
+    font-size: 14px;
+}
+
+.vehicle-row:hover {
+    background: black;
+}
+
+
+
+.vehicle-row p,
+.vehicle-row h3 {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vehicle-row h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.vehicle-row button {
+    background: #e74c3c;
+    margin-left: 150px;
+    width: 150px;
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    justify-self: center;
+}
+
+.vehicle-row button:hover {
+    background: #c0392b;
+}
+
+
+
+
+
+
+
+.vehicle_history {
+    background-image: url("https://images.unsplash.com/photo-1704687409560-103eb4bd0592?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-height: 100vh;
+    overflow-y: auto;
+    position: relative;
+    
+ 
+}
+
+.vehicle_history h2 {
+    font-size: 26px;
+    font-weight: bold;
+    background: #2a63c4;
+    color: white;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.vehicle_history button {
+    width: 100px;
+    font-size: 20px;
+    /* display: inline-block; */
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    filter: drop-shadow(0px 0px 5px white);
+    margin: 10px;
+    margin-left: 10px;
+    position: relative;
+
+}
+
+.vehicle_history button:hover {
+    background: rgb(135, 116, 116);
+}
+
+.vehicle_history>div {
+    display: grid;
+    grid-template-columns: 40px 150px 120px 1fr 1fr;
+    /* index | number | type | entry | exit */
+    align-items: center;
+    background: #2a63c4;
+    margin: 8px auto;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 95%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    min-height: 50px;
+}
+
+.vehicle_history>div:hover {
+    background: #444;
+
+}
+
+.vehicle_history>div p,
+.vehicle_history>div h3 {
+    margin: 0 8px;
+}
+
+.vehicle_history>div h3 {
+    flex: 1;
+    font-size: 18px;
+}
